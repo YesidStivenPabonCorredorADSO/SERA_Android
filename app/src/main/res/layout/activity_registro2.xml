@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#49BAFF"
+    tools:context=".registro_2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#015FF4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registro"
+            android:textColor="#FFFF"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="15dp"
+            app:srcCompat="@drawable/imagen" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="364dp"
+        android:layout_height="500dp"
+        android:background="#DFF0FF"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Correo Eletronico"
+            android:textColor="#1F97FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ingrese el correo con el que se va a loguear"
+            android:textColor="#1F97FF"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextText5"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#ffff"
+            android:backgroundTint="#ffff"
+            android:drawableRight="@drawable/baseline_email_24"
+            android:ems="10"
+            android:hint="Correo Eletronico"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="#005FA7" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Crea una contraseña Segura"
+            android:textColor="#1F97FF"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Crea una contraseña segura con letras, números y símbolos combinados."
+            android:textColor="#1F97FF" />
+
+        <EditText
+            android:id="@+id/edit_contra1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#FFFF"
+            android:backgroundTint="#FFFF"
+            android:drawableRight="@drawable/baseline_visibility_off_24"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="#005FA7" />
+
+        <EditText
+            android:id="@+id/edit_contrasena2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="#ffff"
+            android:backgroundTint="#ffff"
+            android:drawableRight="@drawable/baseline_visibility_off_24"
+            android:ems="10"
+            android:hint="Confirmacion"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textColorHint="#005FA7" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cancelar"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#ffff"
+                android:paddingTop="6dp"
+                android:text="Cancelar"
+                android:textColor="#005FA7" />
+
+            <Button
+                android:id="@+id/Button_siguiente_re2"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1F97FF"
+                android:text="Siguiente" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

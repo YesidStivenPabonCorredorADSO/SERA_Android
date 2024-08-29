@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".apartado_usuario_perfil_configuracion">
+
+    <!-- Barra de herramientas -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#49BAFF"
+        android:elevation="4dp"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <!-- ConstraintLayout dentro del ScrollView -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/configuracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#49BAFF">
+
+            <!-- Ejemplo de un componente dentro del ConstraintLayout -->
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="340dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="36dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editTextIdUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="#FFFF"
+                    android:backgroundTint="#FFFF"
+                    android:drawableLeft="@drawable/baseline_numbers_24"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/nombreTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="#000000"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/perfil"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/apellidoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/perfil"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/correoTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:paddingLeft="5dp" />
+
+                <EditText
+                    android:id="@+id/contrasenaTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:background="#FFFF"
+                    android:backgroundTint="#FFFF"
+                    android:drawableRight="@drawable/baseline_visibility_off_24"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="309dp"
+                android:layout_height="217dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <Button
+                    android:id="@+id/button_editar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0697F1"
+                    android:drawableLeft="@drawable/edit_24"
+                    android:text="Editar"
+                    android:textColor="#F8F8F8" />
+
+                <Button
+                    android:id="@+id/buttion_guardar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#0697F1"
+                    android:drawableLeft="@drawable/archive_24"
+                    android:text="Guardar"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:id="@+id/button_cerrar"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FA0B0B"
+                    android:drawableLeft="@drawable/baseline_logout_24"
+                    android:text="Cerrar Sesion" />
+
+                <Button
+                    android:id="@+id/button_eliminar"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FA0B0B"
+                    android:drawableLeft="@drawable/person_white"
+                    android:text="Eliminar cuenta" />
+            </LinearLayout>
+
+            <!-- Agrega más vistas aquí -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
